@@ -32,6 +32,7 @@ rhdhOperator:
       username: ARGOCD_USERNAME # Key in the secret with name defined in the 'name' field that contains the value of the username to login to ArgoCD. Defaults to 'ARGOCD_USERNAME', empty for not available.
       password: ARGOCD_PASSWORD # Key in the secret with name  defined in the 'name' field that contains the value of the password to authenticate to ArgoCD. Defaults to 'ARGOCD_PASSWORD', empty for not available.
   subscription:
+    source: rhdh-operator-catalog-source
     namespace: rhdh-operator # namespace where the operator should be deployed
     channel: fast # channel of an operator package to subscribe to
     installPlanApproval: Automatic # whether the update should be installed automatically
